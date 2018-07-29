@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whatsapp"
+    tools:context="com.example.ankit.chatapp.Message">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2d5b33"
+        android:text="Name"
+        android:textColor="#ffffff"
+        android:padding="2dp"
+        android:id="@+id/textViewName"
+ android:drawableLeft="@mipmap/ic_launcher"
+        android:gravity="center"/>
+
+
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:id="@+id/recyclerView"
+    android:layout_below="@id/textViewName"
+    android:layout_marginBottom="56dp"
+    android:layout_height="match_parent">
+
+</android.support.v7.widget.RecyclerView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:weightSum="10"
+    android:orientation="horizontal">
+    <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="56dp"
+android:layout_marginLeft="8dp"
+        android:textColorHint="#000000"
+        android:textColor="#000000"
+        android:hint="Type a message"
+    android:background="@drawable/gedittext"
+    android:id="@+id/editText"
+        android:padding="10dp"
+        android:layout_weight="9"
+ />
+<ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="56dp"
+    android:id="@+id/btSend"
+    android:background="@drawable/ic_enter"
+    android:layout_weight="1"
+   />
+</LinearLayout>
+
+
+
+</RelativeLayout>

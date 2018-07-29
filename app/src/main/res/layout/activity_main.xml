@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@drawable/sign"
+
+
+    tools:context="com.example.ankit.chatapp.MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:fontFamily="cursive"
+
+        android:padding="10dp"
+        android:textStyle="bold|italic"
+        android:textSize="35sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        />
+    <LinearLayout
+    android:layout_width="match_parent"
+  android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_stat_name"
+            android:background="@drawable/myedittext"
+            android:padding="10dp"
+            android:hint="Enter Name....."
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:drawablePadding="10dp"
+            android:id="@+id/etSignName"
+            android:layout_margin="10dp"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_email"
+            android:background="@drawable/myedittext"
+            android:padding="10dp"
+            android:hint="Enter Email....."
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:drawablePadding="10dp"
+            android:id="@+id/etSignEmail"
+            android:layout_margin="10dp"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etSignPassword"
+            android:drawableLeft="@drawable/ic_password"
+            android:background="@drawable/myedittext"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:hint="Enter Password....."
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:drawablePadding="10dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/etSignPhone"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_phone"
+            android:background="@drawable/myedittext"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:hint="Enter Phone No....."
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:drawablePadding="10dp"
+            />
+<Button
+    android:layout_width="match_parent"
+    android:background="@drawable/mybutton"
+    android:layout_height="wrap_content"
+   android:layout_margin="10dp"
+    android:id="@+id/btSignUp"
+    android:text="Sign Up"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/btSignLog"
+            android:background="@drawable/mybutton"
+            android:text="Already Have Account!\n Sign In"/>
+
+
+
+
+</LinearLayout>
+
+</RelativeLayout>

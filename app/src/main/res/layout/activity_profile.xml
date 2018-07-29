@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ankit.chatapp.Profile">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/mainFrame"
+        android:layout_above="@+id/mainNav"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/mainNav"
+        android:layout_alignParentBottom="true"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:menu="@menu/nav_items"
+        app:itemBackground="@color/colorWhite"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextColor="@color/nav_item_color"
+        android:layout_height="56dp">
+
+    </android.support.design.widget.BottomNavigationView>
+
+</RelativeLayout>
